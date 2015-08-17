@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="myapp">
+<html lang="en" ng-app="emailclient">
 
     <head>
         <meta charset="utf-8">
@@ -8,10 +8,18 @@
 
         <meta name="author" content="Damian Sosnowski">
 
-        <script src="lib/angular.js"></script>
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-animate.min.js"></script>
+        <script src="lib/angular-route.min.js"></script>
+        <script src="src/emailclient/emailclient.js"></script>
+        <script src="src/emailclient/controllers/index.js"></script>
+        <script src="src/emailclient/controllers/list.js"></script>
+        <script src="src/emailclient/model/emailFactory.js"></script>
+        
+        <link href="src/css/style.css" rel="stylesheet" />
     </head>
 
     <body>
-
+        <div ng-view class=""></div>
     </body>
 </html>
