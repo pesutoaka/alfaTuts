@@ -1,4 +1,5 @@
-<div class="" ng-repeat="email in factory.emails">
+<input type="text" ng-model="nazwa">
+<div class="fade" ng-repeat="email in factory.emails | filter:nazwa">
     <div>
         <h4>{{email.title}}</h4>
         <div>{{email.content}}</div>
